@@ -8,6 +8,11 @@ module.exports = {
     get() {
         return db(TABLE_NAME).select('*')
     },
+    getById(id) {
+        return db(TABLE_NAME)
+        .select('*')
+        .where('id', id)
+    },
     insert(product) {
         return db(TABLE_NAME).insert(product);
     },

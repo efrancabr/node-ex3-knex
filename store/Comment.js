@@ -7,6 +7,9 @@ const commentSchema = new mongoose.Schema({
     comment: {
         type: String
     },
+    product: {
+        type: Number
+    }
 })
 
 const Comment = mongoose.model('Comment', commentSchema)
